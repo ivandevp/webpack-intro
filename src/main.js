@@ -7,5 +7,6 @@ import image from "./image.jpeg";
 
 const img = document.createElement("img");
 img.src = image;
+img.style.width = "50%";
 
 document.body.appendChild(img);

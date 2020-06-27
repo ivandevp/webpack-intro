@@ -33,4 +33,9 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({ template: "./public/index.html" }),
   ],
+  devServer: {
+    contentBase: path.join(__dirname, "build"),
+    compress: true,
+    port: 9000,
+  },
 };
